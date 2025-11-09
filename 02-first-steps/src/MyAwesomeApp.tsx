@@ -20,11 +20,11 @@ const activeStyle: CSSProperties = {
 
 export function MyAwesomeApp() {
   return (
-    <>
-      <h1>{firstName}</h1>
+    <div>
+      <h1 data-testid="first-name-title">{firstName}</h1>
       <h3>{lastName}</h3>
 
-      <p>{favoriteGames.join(", ")}</p>
+      <p className="mi-clase-favorita">{favoriteGames.join(", ")}</p>
 
       <h1 style={activeStyle}> {isActive ? "Active" : "Inactive"} </h1>
 
@@ -33,7 +33,7 @@ export function MyAwesomeApp() {
       >
         {JSON.stringify(address)}
       </p>
-    </>
+    </div>
   );
 }
  
